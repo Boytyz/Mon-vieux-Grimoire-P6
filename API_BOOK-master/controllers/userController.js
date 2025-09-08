@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import * as userService from '../services/userService.js';
-
+  
 export const createUser = async (req, res) => {
   try {
     const { email, password } = req.body;

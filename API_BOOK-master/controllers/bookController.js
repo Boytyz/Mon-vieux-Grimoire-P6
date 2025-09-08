@@ -1,7 +1,7 @@
 import * as bookService from "../services/bookService.js";
 import fs from "fs";
 import path from "path";
-
+ 
 // GET /api/books - Récupérer tous les livres
 export const getAllBooks = async (req, res) => {
   try {
