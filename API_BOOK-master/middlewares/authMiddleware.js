@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 
+// Middleware de protection de route
 export function requireAuth(req, res, next) {
   const token = req.header("Authorization")?.replace("Bearer ", "");
 
