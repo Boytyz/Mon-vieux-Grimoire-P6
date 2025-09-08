@@ -34,6 +34,7 @@ router.delete("/:id", deleteBook);
 // POST /api/books/:id/rating - Ajouter une note à un livre
 router.post("/:id/rating", addRating);
 
-router.post('/', upload.single('image'), compressImage, createBook);
+// POST /api/books - Créer un nouveau livre (avec upload d'image et compression)
+router.post("/", upload.single("image"), compressImage, createBook);
 
 export default router;
