@@ -81,8 +81,5 @@ export async function addRating(bookId, userId, rating) {
   return await book.save();
 }
 
-{Book.averageRating > 0
-  ? displayStars(book.averageRating)
-  : <span>Pas de note</span>
-}
+
 
